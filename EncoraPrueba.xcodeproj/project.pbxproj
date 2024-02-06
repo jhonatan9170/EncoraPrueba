@@ -9,13 +9,10 @@
 /* Begin PBXBuildFile section */
 		5AC7658B2B72D148003A869B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC7658A2B72D148003A869B /* AppDelegate.swift */; };
 		5AC7658D2B72D148003A869B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC7658C2B72D148003A869B /* SceneDelegate.swift */; };
-		5AC7658F2B72D148003A869B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC7658E2B72D148003A869B /* ViewController.swift */; };
-		5AC765922B72D148003A869B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AC765902B72D148003A869B /* Main.storyboard */; };
 		5AC765942B72D14A003A869B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AC765932B72D14A003A869B /* Assets.xcassets */; };
 		5AC765972B72D14A003A869B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AC765952B72D14A003A869B /* LaunchScreen.storyboard */; };
-		5AC765A22B72D14B003A869B /* EncoraPruebaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC765A12B72D14B003A869B /* EncoraPruebaTests.swift */; };
-		5AC765AC2B72D14B003A869B /* EncoraPruebaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC765AB2B72D14B003A869B /* EncoraPruebaUITests.swift */; };
-		5AC765AE2B72D14B003A869B /* EncoraPruebaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC765AD2B72D14B003A869B /* EncoraPruebaUITestsLaunchTests.swift */; };
+		DB46169C71D52B8EC806DE52 /* Pods_EncoraPrueba.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD0821F866D0B264C053CDB /* Pods_EncoraPrueba.framework */; };
+		F4A046CF9D42D578BF28DB04 /* Pods_EncoraPruebaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCACCC2E2B0CD127AAC06354 /* Pods_EncoraPruebaTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,29 +23,22 @@
 			remoteGlobalIDString = 5AC765862B72D148003A869B;
 			remoteInfo = EncoraPrueba;
 		};
-		5AC765A82B72D14B003A869B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5AC7657F2B72D148003A869B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5AC765862B72D148003A869B;
-			remoteInfo = EncoraPrueba;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		23D8EDBE6C7B377C5B4B2993 /* Pods-EncoraPrueba.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EncoraPrueba.debug.xcconfig"; path = "Target Support Files/Pods-EncoraPrueba/Pods-EncoraPrueba.debug.xcconfig"; sourceTree = "<group>"; };
+		352307C4C7406B3A3058A1DE /* Pods-EncoraPruebaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EncoraPruebaTests.release.xcconfig"; path = "Target Support Files/Pods-EncoraPruebaTests/Pods-EncoraPruebaTests.release.xcconfig"; sourceTree = "<group>"; };
+		3CC8201FB27D8DA7CED03536 /* Pods-EncoraPrueba.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EncoraPrueba.release.xcconfig"; path = "Target Support Files/Pods-EncoraPrueba/Pods-EncoraPrueba.release.xcconfig"; sourceTree = "<group>"; };
 		5AC765872B72D148003A869B /* EncoraPrueba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EncoraPrueba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AC7658A2B72D148003A869B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AC7658C2B72D148003A869B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5AC7658E2B72D148003A869B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5AC765912B72D148003A869B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5AC765932B72D14A003A869B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5AC765962B72D14A003A869B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5AC765982B72D14A003A869B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AC7659D2B72D14B003A869B /* EncoraPruebaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EncoraPruebaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5AC765A12B72D14B003A869B /* EncoraPruebaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncoraPruebaTests.swift; sourceTree = "<group>"; };
-		5AC765A72B72D14B003A869B /* EncoraPruebaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EncoraPruebaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5AC765AB2B72D14B003A869B /* EncoraPruebaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncoraPruebaUITests.swift; sourceTree = "<group>"; };
-		5AC765AD2B72D14B003A869B /* EncoraPruebaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncoraPruebaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8C65C053B90C983EFEFE6AF3 /* Pods-EncoraPruebaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EncoraPruebaTests.debug.xcconfig"; path = "Target Support Files/Pods-EncoraPruebaTests/Pods-EncoraPruebaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CFD0821F866D0B264C053CDB /* Pods_EncoraPrueba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EncoraPrueba.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCACCC2E2B0CD127AAC06354 /* Pods_EncoraPruebaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EncoraPruebaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB46169C71D52B8EC806DE52 /* Pods_EncoraPrueba.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,13 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5AC765A42B72D14B003A869B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				F4A046CF9D42D578BF28DB04 /* Pods_EncoraPruebaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,8 +66,9 @@
 			children = (
 				5AC765892B72D148003A869B /* EncoraPrueba */,
 				5AC765A02B72D14B003A869B /* EncoraPruebaTests */,
-				5AC765AA2B72D14B003A869B /* EncoraPruebaUITests */,
 				5AC765882B72D148003A869B /* Products */,
+				C7FFD5A011F71A2CABECEB7F /* Pods */,
+				EE65B6D8465CFE4B6C3CA2DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,7 +77,6 @@
 			children = (
 				5AC765872B72D148003A869B /* EncoraPrueba.app */,
 				5AC7659D2B72D14B003A869B /* EncoraPruebaTests.xctest */,
-				5AC765A72B72D14B003A869B /* EncoraPruebaUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,13 +84,9 @@
 		5AC765892B72D148003A869B /* EncoraPrueba */ = {
 			isa = PBXGroup;
 			children = (
-				5AC7658A2B72D148003A869B /* AppDelegate.swift */,
-				5AC7658C2B72D148003A869B /* SceneDelegate.swift */,
-				5AC7658E2B72D148003A869B /* ViewController.swift */,
-				5AC765902B72D148003A869B /* Main.storyboard */,
-				5AC765932B72D14A003A869B /* Assets.xcassets */,
-				5AC765952B72D14A003A869B /* LaunchScreen.storyboard */,
-				5AC765982B72D14A003A869B /* Info.plist */,
+				5AC765BA2B72D27F003A869B /* App */,
+				5AC765BB2B72D2C5003A869B /* Utilities */,
+				5AC765BE2B72D45C003A869B /* Modules */,
 			);
 			path = EncoraPrueba;
 			sourceTree = "<group>";
@@ -113,18 +94,71 @@
 		5AC765A02B72D14B003A869B /* EncoraPruebaTests */ = {
 			isa = PBXGroup;
 			children = (
-				5AC765A12B72D14B003A869B /* EncoraPruebaTests.swift */,
 			);
 			path = EncoraPruebaTests;
 			sourceTree = "<group>";
 		};
-		5AC765AA2B72D14B003A869B /* EncoraPruebaUITests */ = {
+		5AC765BA2B72D27F003A869B /* App */ = {
 			isa = PBXGroup;
 			children = (
-				5AC765AB2B72D14B003A869B /* EncoraPruebaUITests.swift */,
-				5AC765AD2B72D14B003A869B /* EncoraPruebaUITestsLaunchTests.swift */,
+				5AC7658A2B72D148003A869B /* AppDelegate.swift */,
+				5AC7658C2B72D148003A869B /* SceneDelegate.swift */,
+				5AC765952B72D14A003A869B /* LaunchScreen.storyboard */,
+				5AC765982B72D14A003A869B /* Info.plist */,
 			);
-			path = EncoraPruebaUITests;
+			path = App;
+			sourceTree = "<group>";
+		};
+		5AC765BB2B72D2C5003A869B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5AC765BD2B72D2FD003A869B /* Extensions */,
+				5AC765BC2B72D2EF003A869B /* Resources */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		5AC765BC2B72D2EF003A869B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5AC765932B72D14A003A869B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5AC765BD2B72D2FD003A869B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5AC765BE2B72D45C003A869B /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		C7FFD5A011F71A2CABECEB7F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23D8EDBE6C7B377C5B4B2993 /* Pods-EncoraPrueba.debug.xcconfig */,
+				3CC8201FB27D8DA7CED03536 /* Pods-EncoraPrueba.release.xcconfig */,
+				8C65C053B90C983EFEFE6AF3 /* Pods-EncoraPruebaTests.debug.xcconfig */,
+				352307C4C7406B3A3058A1DE /* Pods-EncoraPruebaTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EE65B6D8465CFE4B6C3CA2DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CFD0821F866D0B264C053CDB /* Pods_EncoraPrueba.framework */,
+				FCACCC2E2B0CD127AAC06354 /* Pods_EncoraPruebaTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,6 +168,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5AC765B12B72D14B003A869B /* Build configuration list for PBXNativeTarget "EncoraPrueba" */;
 			buildPhases = (
+				543DE3E2E4ACCD64801A9692 /* [CP] Check Pods Manifest.lock */,
 				5AC765832B72D148003A869B /* Sources */,
 				5AC765842B72D148003A869B /* Frameworks */,
 				5AC765852B72D148003A869B /* Resources */,
@@ -151,9 +186,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5AC765B42B72D14B003A869B /* Build configuration list for PBXNativeTarget "EncoraPruebaTests" */;
 			buildPhases = (
+				5CD499342E28C3F78BC5FC57 /* [CP] Check Pods Manifest.lock */,
 				5AC765992B72D14B003A869B /* Sources */,
 				5AC7659A2B72D14B003A869B /* Frameworks */,
 				5AC7659B2B72D14B003A869B /* Resources */,
+				B416DAEE95BF82DA7338A53C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -164,24 +201,6 @@
 			productName = EncoraPruebaTests;
 			productReference = 5AC7659D2B72D14B003A869B /* EncoraPruebaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		5AC765A62B72D14B003A869B /* EncoraPruebaUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5AC765B72B72D14B003A869B /* Build configuration list for PBXNativeTarget "EncoraPruebaUITests" */;
-			buildPhases = (
-				5AC765A32B72D14B003A869B /* Sources */,
-				5AC765A42B72D14B003A869B /* Frameworks */,
-				5AC765A52B72D14B003A869B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5AC765A92B72D14B003A869B /* PBXTargetDependency */,
-			);
-			name = EncoraPruebaUITests;
-			productName = EncoraPruebaUITests;
-			productReference = 5AC765A72B72D14B003A869B /* EncoraPruebaUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -197,10 +216,6 @@
 						CreatedOnToolsVersion = 15.1;
 					};
 					5AC7659C2B72D14B003A869B = {
-						CreatedOnToolsVersion = 15.1;
-						TestTargetID = 5AC765862B72D148003A869B;
-					};
-					5AC765A62B72D14B003A869B = {
 						CreatedOnToolsVersion = 15.1;
 						TestTargetID = 5AC765862B72D148003A869B;
 					};
@@ -221,7 +236,6 @@
 			targets = (
 				5AC765862B72D148003A869B /* EncoraPrueba */,
 				5AC7659C2B72D14B003A869B /* EncoraPruebaTests */,
-				5AC765A62B72D14B003A869B /* EncoraPruebaUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -233,7 +247,6 @@
 			files = (
 				5AC765972B72D14A003A869B /* LaunchScreen.storyboard in Resources */,
 				5AC765942B72D14A003A869B /* Assets.xcassets in Resources */,
-				5AC765922B72D148003A869B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,21 +257,77 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5AC765A52B72D14B003A869B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		543DE3E2E4ACCD64801A9692 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EncoraPrueba-checkManifestLockResult.txt",
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
-/* End PBXResourcesBuildPhase section */
+		5CD499342E28C3F78BC5FC57 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EncoraPruebaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B416DAEE95BF82DA7338A53C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EncoraPruebaTests/Pods-EncoraPruebaTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EncoraPruebaTests/Pods-EncoraPruebaTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EncoraPruebaTests/Pods-EncoraPruebaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5AC765832B72D148003A869B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AC7658F2B72D148003A869B /* ViewController.swift in Sources */,
 				5AC7658B2B72D148003A869B /* AppDelegate.swift in Sources */,
 				5AC7658D2B72D148003A869B /* SceneDelegate.swift in Sources */,
 			);
@@ -268,16 +337,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AC765A22B72D14B003A869B /* EncoraPruebaTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5AC765A32B72D14B003A869B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5AC765AC2B72D14B003A869B /* EncoraPruebaUITests.swift in Sources */,
-				5AC765AE2B72D14B003A869B /* EncoraPruebaUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,22 +348,9 @@
 			target = 5AC765862B72D148003A869B /* EncoraPrueba */;
 			targetProxy = 5AC7659E2B72D14B003A869B /* PBXContainerItemProxy */;
 		};
-		5AC765A92B72D14B003A869B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5AC765862B72D148003A869B /* EncoraPrueba */;
-			targetProxy = 5AC765A82B72D14B003A869B /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5AC765902B72D148003A869B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5AC765912B72D148003A869B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5AC765952B72D14A003A869B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -437,6 +483,7 @@
 		};
 		5AC765B22B72D14B003A869B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23D8EDBE6C7B377C5B4B2993 /* Pods-EncoraPrueba.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -444,10 +491,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5526S63QR3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = EncoraPrueba/Info.plist;
+				INFOPLIST_FILE = EncoraPrueba/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -465,6 +511,7 @@
 		};
 		5AC765B32B72D14B003A869B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CC8201FB27D8DA7CED03536 /* Pods-EncoraPrueba.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -472,10 +519,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5526S63QR3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = EncoraPrueba/Info.plist;
+				INFOPLIST_FILE = EncoraPrueba/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -493,6 +539,7 @@
 		};
 		5AC765B52B72D14B003A869B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C65C053B90C983EFEFE6AF3 /* Pods-EncoraPruebaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -513,6 +560,7 @@
 		};
 		5AC765B62B72D14B003A869B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 352307C4C7406B3A3058A1DE /* Pods-EncoraPruebaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -528,42 +576,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EncoraPrueba.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EncoraPrueba";
-			};
-			name = Release;
-		};
-		5AC765B82B72D14B003A869B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5526S63QR3;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jhonatan.EncoraPruebaUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = EncoraPrueba;
-			};
-			name = Debug;
-		};
-		5AC765B92B72D14B003A869B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5526S63QR3;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jhonatan.EncoraPruebaUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = EncoraPrueba;
 			};
 			name = Release;
 		};
@@ -593,15 +605,6 @@
 			buildConfigurations = (
 				5AC765B52B72D14B003A869B /* Debug */,
 				5AC765B62B72D14B003A869B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5AC765B72B72D14B003A869B /* Build configuration list for PBXNativeTarget "EncoraPruebaUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5AC765B82B72D14B003A869B /* Debug */,
-				5AC765B92B72D14B003A869B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
