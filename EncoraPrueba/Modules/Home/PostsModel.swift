@@ -42,6 +42,10 @@ struct PostEntity {
     let subtitle: String
 }
 
+extension PostEntity:Equatable{
+    
+}
+
 extension PostModel {
     var postEntity:PostEntity {
         return PostEntity(id: self.id, title: self.title, subtitle: self.body)
