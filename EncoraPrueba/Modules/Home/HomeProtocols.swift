@@ -9,7 +9,7 @@ protocol HomeWireframeProtocol: AnyObject {
 //MARK: View -> Presenter
 protocol HomePresenterProtocol: AnyObject {
     var interactor: HomeInteractorInputProtocol? { get set }
-    var postsToShow: [PostEntity] {get}
+    var postsToShow: [PostEntity] {get set}
     
     func getPosts()
     func filterByTitle(text: String)

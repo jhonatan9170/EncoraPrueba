@@ -2,13 +2,14 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="PruebaTecnica" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="EncoraPrueba" customModuleProvider="target">
             <connections>
                 <outlet property="postsTableView" destination="mdw-pJ-hQS" id="vqh-4M-5Wq"/>
                 <outlet property="searchBar" destination="0yH-ny-1xz" id="uwc-kR-bi8"/>
@@ -21,16 +22,16 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="NfJ-IX-Ngv">
-                    <rect key="frame" x="20" y="109" width="353" height="56"/>
+                    <rect key="frame" x="20" y="69" width="363" height="56"/>
                     <subviews>
-                        <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Busca..." translatesAutoresizingMaskIntoConstraints="NO" id="0yH-ny-1xz">
-                            <rect key="frame" x="0.0" y="0.0" width="353" height="56"/>
+                        <searchBar contentMode="redraw" searchBarStyle="minimal" text="" placeholder="Buscar" translatesAutoresizingMaskIntoConstraints="NO" id="0yH-ny-1xz">
+                            <rect key="frame" x="0.0" y="0.0" width="363" height="56"/>
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
                     </subviews>
                 </stackView>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="mdw-pJ-hQS">
-                    <rect key="frame" x="20" y="185" width="353" height="583"/>
+                    <rect key="frame" x="20" y="135" width="353" height="633"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
             </subviews>
@@ -39,9 +40,9 @@
             <constraints>
                 <constraint firstItem="NfJ-IX-Ngv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="5bO-3V-iUw"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="mdw-pJ-hQS" secondAttribute="trailing" constant="20" id="Abl-Kj-LaO"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="NfJ-IX-Ngv" secondAttribute="trailing" constant="20" id="Nzf-yp-pKb"/>
-                <constraint firstItem="NfJ-IX-Ngv" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="50" id="h4w-ej-hlL"/>
-                <constraint firstItem="mdw-pJ-hQS" firstAttribute="top" secondItem="NfJ-IX-Ngv" secondAttribute="bottom" constant="20" id="ivP-X4-0Wn"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="NfJ-IX-Ngv" secondAttribute="trailing" constant="10" id="Nzf-yp-pKb"/>
+                <constraint firstItem="NfJ-IX-Ngv" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="h4w-ej-hlL"/>
+                <constraint firstItem="mdw-pJ-hQS" firstAttribute="top" secondItem="NfJ-IX-Ngv" secondAttribute="bottom" constant="10" id="ivP-X4-0Wn"/>
                 <constraint firstItem="mdw-pJ-hQS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="nBV-Hc-gP0"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="mdw-pJ-hQS" secondAttribute="bottom" constant="50" id="u2f-bt-4ev"/>
             </constraints>

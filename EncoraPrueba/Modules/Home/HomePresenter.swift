@@ -7,7 +7,7 @@ class HomePresenter {
     private let router: HomeWireframeProtocol
     
     private var _postToShow = [PostEntity]()
-    private var posts = [PostEntity]()
+    var posts = [PostEntity]()
 
     
     init(interface: HomeViewProtocol, interactor: HomeInteractorInputProtocol?, router: HomeWireframeProtocol) {
@@ -19,7 +19,12 @@ class HomePresenter {
 
 extension HomePresenter: HomePresenterProtocol {
     var postsToShow: [PostEntity] {
-        return _postToShow
+        get {
+            return _postToShow
+        }
+        set {
+            _postToShow = newValue
+        }
     }
         
     func getPosts() {
@@ -57,3 +62,4 @@ extension HomePresenter: HomeInteractorOutputProtocol {
         router.showAlertWith(message: error)
     }
 }
+
