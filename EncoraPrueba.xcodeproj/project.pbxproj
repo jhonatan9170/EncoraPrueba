@@ -11,6 +11,19 @@
 		5AC7658D2B72D148003A869B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC7658C2B72D148003A869B /* SceneDelegate.swift */; };
 		5AC765942B72D14A003A869B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AC765932B72D14A003A869B /* Assets.xcassets */; };
 		5AC765972B72D14A003A869B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AC765952B72D14A003A869B /* LaunchScreen.storyboard */; };
+		5AC765C12B72D7B2003A869B /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC765C02B72D7B2003A869B /* HomeProtocols.swift */; };
+		5AC765C32B72D824003A869B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC765C22B72D824003A869B /* HomeViewController.swift */; };
+		5AC765C52B72D840003A869B /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC765C42B72D840003A869B /* HomeRouter.swift */; };
+		5AC765C72B72D84E003A869B /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC765C62B72D84E003A869B /* HomePresenter.swift */; };
+		5AC765C92B72D85E003A869B /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC765C82B72D85E003A869B /* HomeInteractor.swift */; };
+		5AC765CB2B72D8A0003A869B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC765CA2B72D8A0003A869B /* Constants.swift */; };
+		5AC765CE2B72DB65003A869B /* RequestMananger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC765CD2B72DB65003A869B /* RequestMananger.swift */; };
+		5AC765D12B72DF3E003A869B /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AC765D02B72DF3E003A869B /* HomeView.xib */; };
+		5AC765D42B72DF48003A869B /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AC765D22B72DF48003A869B /* CustomTableViewCell.xib */; };
+		5AC765D52B72DF48003A869B /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC765D32B72DF48003A869B /* CustomTableViewCell.swift */; };
+		5AC765D72B72E15A003A869B /* PostsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC765D62B72E15A003A869B /* PostsModel.swift */; };
+		5AC765D92B72E39B003A869B /* PostsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC765D82B72E39B003A869B /* PostsService.swift */; };
+		5AC765DB2B72FBBE003A869B /* ExtensionUIVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC765DA2B72FBBE003A869B /* ExtensionUIVIewController.swift */; };
 		DB46169C71D52B8EC806DE52 /* Pods_EncoraPrueba.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD0821F866D0B264C053CDB /* Pods_EncoraPrueba.framework */; };
 		F4A046CF9D42D578BF28DB04 /* Pods_EncoraPruebaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCACCC2E2B0CD127AAC06354 /* Pods_EncoraPruebaTests.framework */; };
 /* End PBXBuildFile section */
@@ -36,6 +49,19 @@
 		5AC765962B72D14A003A869B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5AC765982B72D14A003A869B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AC7659D2B72D14B003A869B /* EncoraPruebaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EncoraPruebaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AC765C02B72D7B2003A869B /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
+		5AC765C22B72D824003A869B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5AC765C42B72D840003A869B /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		5AC765C62B72D84E003A869B /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		5AC765C82B72D85E003A869B /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		5AC765CA2B72D8A0003A869B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5AC765CD2B72DB65003A869B /* RequestMananger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMananger.swift; sourceTree = "<group>"; };
+		5AC765D02B72DF3E003A869B /* HomeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
+		5AC765D22B72DF48003A869B /* CustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		5AC765D32B72DF48003A869B /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		5AC765D62B72E15A003A869B /* PostsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsModel.swift; sourceTree = "<group>"; };
+		5AC765D82B72E39B003A869B /* PostsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsService.swift; sourceTree = "<group>"; };
+		5AC765DA2B72FBBE003A869B /* ExtensionUIVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIVIewController.swift; sourceTree = "<group>"; };
 		8C65C053B90C983EFEFE6AF3 /* Pods-EncoraPruebaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EncoraPruebaTests.debug.xcconfig"; path = "Target Support Files/Pods-EncoraPruebaTests/Pods-EncoraPruebaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CFD0821F866D0B264C053CDB /* Pods_EncoraPrueba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EncoraPrueba.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCACCC2E2B0CD127AAC06354 /* Pods_EncoraPruebaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EncoraPruebaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +110,7 @@
 		5AC765892B72D148003A869B /* EncoraPrueba */ = {
 			isa = PBXGroup;
 			children = (
+				5AC765CC2B72DB38003A869B /* Request */,
 				5AC765BA2B72D27F003A869B /* App */,
 				5AC765BB2B72D2C5003A869B /* Utilities */,
 				5AC765BE2B72D45C003A869B /* Modules */,
@@ -114,6 +141,7 @@
 			children = (
 				5AC765BD2B72D2FD003A869B /* Extensions */,
 				5AC765BC2B72D2EF003A869B /* Resources */,
+				5AC765CA2B72D8A0003A869B /* Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -129,6 +157,7 @@
 		5AC765BD2B72D2FD003A869B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				5AC765DA2B72FBBE003A869B /* ExtensionUIVIewController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -136,8 +165,42 @@
 		5AC765BE2B72D45C003A869B /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				5AC765BF2B72D78E003A869B /* Home */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		5AC765BF2B72D78E003A869B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5AC765CF2B72DE9A003A869B /* Cell */,
+				5AC765C02B72D7B2003A869B /* HomeProtocols.swift */,
+				5AC765C22B72D824003A869B /* HomeViewController.swift */,
+				5AC765D02B72DF3E003A869B /* HomeView.xib */,
+				5AC765C62B72D84E003A869B /* HomePresenter.swift */,
+				5AC765C82B72D85E003A869B /* HomeInteractor.swift */,
+				5AC765C42B72D840003A869B /* HomeRouter.swift */,
+				5AC765D62B72E15A003A869B /* PostsModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		5AC765CC2B72DB38003A869B /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				5AC765CD2B72DB65003A869B /* RequestMananger.swift */,
+				5AC765D82B72E39B003A869B /* PostsService.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		5AC765CF2B72DE9A003A869B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5AC765D32B72DF48003A869B /* CustomTableViewCell.swift */,
+				5AC765D22B72DF48003A869B /* CustomTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		C7FFD5A011F71A2CABECEB7F /* Pods */ = {
@@ -148,7 +211,6 @@
 				8C65C053B90C983EFEFE6AF3 /* Pods-EncoraPruebaTests.debug.xcconfig */,
 				352307C4C7406B3A3058A1DE /* Pods-EncoraPruebaTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -172,6 +234,7 @@
 				5AC765832B72D148003A869B /* Sources */,
 				5AC765842B72D148003A869B /* Frameworks */,
 				5AC765852B72D148003A869B /* Resources */,
+				5E529AD87965CBAE551D1F50 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -190,7 +253,6 @@
 				5AC765992B72D14B003A869B /* Sources */,
 				5AC7659A2B72D14B003A869B /* Frameworks */,
 				5AC7659B2B72D14B003A869B /* Resources */,
-				B416DAEE95BF82DA7338A53C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -247,6 +309,8 @@
 			files = (
 				5AC765972B72D14A003A869B /* LaunchScreen.storyboard in Resources */,
 				5AC765942B72D14A003A869B /* Assets.xcassets in Resources */,
+				5AC765D42B72DF48003A869B /* CustomTableViewCell.xib in Resources */,
+				5AC765D12B72DF3E003A869B /* HomeView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,21 +368,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B416DAEE95BF82DA7338A53C /* [CP] Embed Pods Frameworks */ = {
+		5E529AD87965CBAE551D1F50 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EncoraPruebaTests/Pods-EncoraPruebaTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-EncoraPrueba/Pods-EncoraPrueba-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EncoraPruebaTests/Pods-EncoraPruebaTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-EncoraPrueba/Pods-EncoraPrueba-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EncoraPruebaTests/Pods-EncoraPruebaTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EncoraPrueba/Pods-EncoraPrueba-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -329,7 +393,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AC7658B2B72D148003A869B /* AppDelegate.swift in Sources */,
+				5AC765C12B72D7B2003A869B /* HomeProtocols.swift in Sources */,
 				5AC7658D2B72D148003A869B /* SceneDelegate.swift in Sources */,
+				5AC765C72B72D84E003A869B /* HomePresenter.swift in Sources */,
+				5AC765C32B72D824003A869B /* HomeViewController.swift in Sources */,
+				5AC765DB2B72FBBE003A869B /* ExtensionUIVIewController.swift in Sources */,
+				5AC765CE2B72DB65003A869B /* RequestMananger.swift in Sources */,
+				5AC765D52B72DF48003A869B /* CustomTableViewCell.swift in Sources */,
+				5AC765C52B72D840003A869B /* HomeRouter.swift in Sources */,
+				5AC765C92B72D85E003A869B /* HomeInteractor.swift in Sources */,
+				5AC765CB2B72D8A0003A869B /* Constants.swift in Sources */,
+				5AC765D72B72E15A003A869B /* PostsModel.swift in Sources */,
+				5AC765D92B72E39B003A869B /* PostsService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,7 +474,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -462,7 +537,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -496,6 +571,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -524,6 +600,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -547,7 +624,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5526S63QR3;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jhonatan.EncoraPruebaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -568,7 +645,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5526S63QR3;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jhonatan.EncoraPruebaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

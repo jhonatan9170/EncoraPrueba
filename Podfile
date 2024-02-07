@@ -5,12 +5,12 @@ target 'EncoraPrueba' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for EncoraPrueba
-
+  pod 'Alamofire'
+  pod 'IHProgressHUD'
+  
   target 'EncoraPruebaTests' do
     inherit! :search_paths
-      pod 'Alamofire'
-      pod 'IHProgressHUD'
+
   end
 
 end
