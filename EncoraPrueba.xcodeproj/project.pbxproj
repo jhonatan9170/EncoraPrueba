@@ -24,6 +24,12 @@
 		5AC765D72B72E15A003A869B /* PostsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC765D62B72E15A003A869B /* PostsModel.swift */; };
 		5AC765D92B72E39B003A869B /* PostsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC765D82B72E39B003A869B /* PostsService.swift */; };
 		5AC765DB2B72FBBE003A869B /* ExtensionUIVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC765DA2B72FBBE003A869B /* ExtensionUIVIewController.swift */; };
+		5AC765E62B7308FE003A869B /* DetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC765E52B7308FE003A869B /* DetailProtocols.swift */; };
+		5AC765E92B730948003A869B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC765E72B730948003A869B /* DetailViewController.swift */; };
+		5AC765EA2B730948003A869B /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AC765E82B730948003A869B /* DetailViewController.xib */; };
+		5AC765EC2B730C5D003A869B /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC765EB2B730C5D003A869B /* DetailRouter.swift */; };
+		5AC765EE2B730CB1003A869B /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC765ED2B730CB1003A869B /* DetailPresenter.swift */; };
+		5AC765F02B730D22003A869B /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC765EF2B730D22003A869B /* DetailInteractor.swift */; };
 		DB46169C71D52B8EC806DE52 /* Pods_EncoraPrueba.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD0821F866D0B264C053CDB /* Pods_EncoraPrueba.framework */; };
 		F4A046CF9D42D578BF28DB04 /* Pods_EncoraPruebaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCACCC2E2B0CD127AAC06354 /* Pods_EncoraPruebaTests.framework */; };
 /* End PBXBuildFile section */
@@ -62,6 +68,12 @@
 		5AC765D62B72E15A003A869B /* PostsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsModel.swift; sourceTree = "<group>"; };
 		5AC765D82B72E39B003A869B /* PostsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsService.swift; sourceTree = "<group>"; };
 		5AC765DA2B72FBBE003A869B /* ExtensionUIVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIVIewController.swift; sourceTree = "<group>"; };
+		5AC765E52B7308FE003A869B /* DetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProtocols.swift; sourceTree = "<group>"; };
+		5AC765E72B730948003A869B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		5AC765E82B730948003A869B /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		5AC765EB2B730C5D003A869B /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		5AC765ED2B730CB1003A869B /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		5AC765EF2B730D22003A869B /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
 		8C65C053B90C983EFEFE6AF3 /* Pods-EncoraPruebaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EncoraPruebaTests.debug.xcconfig"; path = "Target Support Files/Pods-EncoraPruebaTests/Pods-EncoraPruebaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CFD0821F866D0B264C053CDB /* Pods_EncoraPrueba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EncoraPrueba.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCACCC2E2B0CD127AAC06354 /* Pods_EncoraPruebaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EncoraPruebaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,6 +177,7 @@
 		5AC765BE2B72D45C003A869B /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				5AC765E42B7308EC003A869B /* Detail */,
 				5AC765BF2B72D78E003A869B /* Home */,
 			);
 			path = Modules;
@@ -175,8 +188,8 @@
 			children = (
 				5AC765CF2B72DE9A003A869B /* Cell */,
 				5AC765C02B72D7B2003A869B /* HomeProtocols.swift */,
-				5AC765C22B72D824003A869B /* HomeViewController.swift */,
 				5AC765D02B72DF3E003A869B /* HomeView.xib */,
+				5AC765C22B72D824003A869B /* HomeViewController.swift */,
 				5AC765C62B72D84E003A869B /* HomePresenter.swift */,
 				5AC765C82B72D85E003A869B /* HomeInteractor.swift */,
 				5AC765C42B72D840003A869B /* HomeRouter.swift */,
@@ -201,6 +214,19 @@
 				5AC765D22B72DF48003A869B /* CustomTableViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		5AC765E42B7308EC003A869B /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				5AC765E52B7308FE003A869B /* DetailProtocols.swift */,
+				5AC765E82B730948003A869B /* DetailViewController.xib */,
+				5AC765E72B730948003A869B /* DetailViewController.swift */,
+				5AC765EB2B730C5D003A869B /* DetailRouter.swift */,
+				5AC765ED2B730CB1003A869B /* DetailPresenter.swift */,
+				5AC765EF2B730D22003A869B /* DetailInteractor.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		C7FFD5A011F71A2CABECEB7F /* Pods */ = {
@@ -309,6 +335,7 @@
 			files = (
 				5AC765972B72D14A003A869B /* LaunchScreen.storyboard in Resources */,
 				5AC765942B72D14A003A869B /* Assets.xcassets in Resources */,
+				5AC765EA2B730948003A869B /* DetailViewController.xib in Resources */,
 				5AC765D42B72DF48003A869B /* CustomTableViewCell.xib in Resources */,
 				5AC765D12B72DF3E003A869B /* HomeView.xib in Resources */,
 			);
@@ -393,7 +420,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AC7658B2B72D148003A869B /* AppDelegate.swift in Sources */,
+				5AC765EC2B730C5D003A869B /* DetailRouter.swift in Sources */,
 				5AC765C12B72D7B2003A869B /* HomeProtocols.swift in Sources */,
+				5AC765F02B730D22003A869B /* DetailInteractor.swift in Sources */,
 				5AC7658D2B72D148003A869B /* SceneDelegate.swift in Sources */,
 				5AC765C72B72D84E003A869B /* HomePresenter.swift in Sources */,
 				5AC765C32B72D824003A869B /* HomeViewController.swift in Sources */,
@@ -402,9 +431,12 @@
 				5AC765D52B72DF48003A869B /* CustomTableViewCell.swift in Sources */,
 				5AC765C52B72D840003A869B /* HomeRouter.swift in Sources */,
 				5AC765C92B72D85E003A869B /* HomeInteractor.swift in Sources */,
+				5AC765E62B7308FE003A869B /* DetailProtocols.swift in Sources */,
 				5AC765CB2B72D8A0003A869B /* Constants.swift in Sources */,
+				5AC765E92B730948003A869B /* DetailViewController.swift in Sources */,
 				5AC765D72B72E15A003A869B /* PostsModel.swift in Sources */,
 				5AC765D92B72E39B003A869B /* PostsService.swift in Sources */,
+				5AC765EE2B730CB1003A869B /* DetailPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -3,6 +3,7 @@ import Foundation
 //MARK: Presenter -> Router
 protocol HomeWireframeProtocol: AnyObject {
     func showAlertWith(message: String)
+    func goToDetailView(post: PostEntity)
 }
 
 //MARK: View -> Presenter
@@ -14,6 +15,7 @@ protocol HomePresenterProtocol: AnyObject {
     func filterByTitle(text: String)
     func cleanFilter()
     func postForCellAtIndex(_ index : Int) -> PostEntity
+    func goToDetailView(withIndex index: Int)
 }
 
 //MARK: Interactor -> Presenter

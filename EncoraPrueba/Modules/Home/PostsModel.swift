@@ -37,12 +37,13 @@ struct Links: Codable {
 }
 
 struct PostEntity {
+    let id: Int
     let title: String
     let subtitle: String
 }
 
 extension PostModel {
     var postEntity:PostEntity {
-        return PostEntity(title: self.title, subtitle: self.body)
+        return PostEntity(id: self.id, title: self.title, subtitle: self.body)
     }
 }

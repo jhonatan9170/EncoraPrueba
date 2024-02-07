@@ -5,14 +5,14 @@ class HomeViewController: UIViewController{
     
     var presenter: HomePresenterProtocol?
     
-    @IBOutlet weak var searchBar: UISearchBar!{
+    @IBOutlet private weak var searchBar: UISearchBar!{
         didSet{
             searchBar.isHidden = true
             searchBar.showsSearchResultsButton = false
             searchBar.delegate = self
         }
     }
-    @IBOutlet weak var postsTableView: UITableView! {
+    @IBOutlet private weak var postsTableView: UITableView! {
         didSet {
             postsTableView.delegate = self
             postsTableView.dataSource = self
@@ -50,6 +50,9 @@ extension HomeViewController: UITableViewDelegate ,UITableViewDataSource{
         let post = presenter.postForCellAtIndex(indexPath.row)
         cell.configureCell(post: post)
         return cell
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter?.goToDetailView(withIndex: indexPath.row)
     }
 }
 

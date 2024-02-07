@@ -23,4 +23,12 @@ class HomeRouter: HomeWireframeProtocol {
         alert.addAction(okAction)
         viewController?.present(alert, animated: true)
     }
+    
+    func goToDetailView(post: PostEntity) {
+        if let nav = viewController?.navigationController {
+            let vc = DetailRouter.createModule(post: post)
+            nav.pushViewController(vc, animated: true)
+        }
+    }
+    
 }

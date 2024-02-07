@@ -39,7 +39,11 @@ extension HomePresenter: HomePresenterProtocol {
     func postForCellAtIndex(_ index: Int) -> PostEntity {
         return _postToShow[index]
     }
-
+    
+    func goToDetailView(withIndex index: Int) {
+        let post = _postToShow[index]
+        router.goToDetailView(post: post)
+    }
 }
 
 extension HomePresenter: HomeInteractorOutputProtocol {

@@ -3,8 +3,8 @@ import UIKit
 
 class CustomTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var cellBodyLabel: UILabel!
+    @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet private weak var cellBodyLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
