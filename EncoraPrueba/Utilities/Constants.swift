@@ -2,7 +2,9 @@ import Foundation
 
 class Constants {
     
-    static let baseAPIURL = "https://gorest.co.in"
-    static let postURL = baseAPIURL + "/public/v1/posts"
+    static let baseAPIURL = "https://restcountries.com/v3.1"
+
+    static let allCountriesURL = baseAPIURL + "/all"
+    static let searchCountryByNameURL = baseAPIURL + "/name/"
 
 }

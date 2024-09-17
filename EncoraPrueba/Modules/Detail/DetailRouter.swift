@@ -3,18 +3,12 @@ import UIKit
 class DetailRouter: DetailWireframeProtocol {
 
     weak var viewController: UIViewController?
-
-    static func createModule(post: PostEntity) -> UIViewController {
-        let view = DetailViewController()
-        let interactor = DetailInteractor()
-        let router = DetailRouter()
-        let presenter = DetailPresenter(interface: view, interactor: interactor, router: router, post: post)
-
-        view.presenter = presenter
-        interactor.presenter = presenter
-        router.viewController = view
-
-        return view
-    }
     
+    func showAlertWith(message: String) {
+        let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Aceptar", style: .default)
+        alert.addAction(okAction)
+        viewController?.present(alert, animated: true)
+    }
+
 }

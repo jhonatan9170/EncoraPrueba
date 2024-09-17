@@ -12,19 +12,20 @@ class HomeViewController: UIViewController{
             searchBar.delegate = self
         }
     }
-    @IBOutlet private weak var postsTableView: UITableView! {
+    
+    @IBOutlet private weak var countriesTableView: UITableView! {
         didSet {
-            postsTableView.delegate = self
-            postsTableView.dataSource = self
-            postsTableView.register(UINib(nibName: "CustomTableViewCell", bundle: nil), forCellReuseIdentifier: "CustomTableViewCell")
+            countriesTableView.delegate = self
+            countriesTableView.dataSource = self
+            countriesTableView.register(UINib(nibName: "CustomTableViewCell", bundle: nil), forCellReuseIdentifier: "CustomTableViewCell")
         }
     }
         
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Posts" 
+        self.title = "Countries"
         showLoadingView()
-        presenter?.getPosts()
+        presenter?.getCountries()
     }
 
     
@@ -41,15 +42,15 @@ class HomeViewController: UIViewController{
 // MARK: - UITableViewDelegate ,UITableViewDataSource
 extension HomeViewController: UITableViewDelegate ,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return presenter?.postsToShow.count ?? 0
+        return presenter?.countriesToShow.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "CustomTableViewCell", for: indexPath) as? CustomTableViewCell, let presenter else {
             return UITableViewCell()
         }
-        let post = presenter.postForCellAtIndex(indexPath.row)
-        cell.configureCell(post: post)
+        let country = presenter.countryForCellAtIndex(indexPath.row)
+        cell.configureCell(post: country)
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -62,21 +63,22 @@ extension HomeViewController: UISearchBarDelegate{
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchText.isEmpty {
-            presenter?.cleanFilter()
+            presenter?.clearFilter()
         } else {
-            presenter?.filterByTitle(text: searchText)
+            presenter?.filterCountriesByName(text: searchText)
         }
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        presenter?.cleanFilter()
+        presenter?.clearFilter()
     }
 }
 
+// MARK: - HomeViewProtocol
 extension HomeViewController: HomeViewProtocol{
-    func showPosts() {
+    func showCountries() {
         searchBar.isHidden = false
-        self.postsTableView.reloadData()
+        self.countriesTableView.reloadData()
         self.dismissLoading()
     }
 }

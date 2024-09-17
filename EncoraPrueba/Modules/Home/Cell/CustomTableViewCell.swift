@@ -13,8 +13,8 @@ class CustomTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
-    func configureCell(post: PostEntity){
-        titleLabel.text = post.title
-        cellBodyLabel.text = post.subtitle
+    func configureCell(post: CountryModel){
+        titleLabel.text = post.name.common
+        cellBodyLabel.text = post.name.official
     }
 }

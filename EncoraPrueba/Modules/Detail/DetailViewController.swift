@@ -1,10 +1,3 @@
-//
-//  DetailViewController.swift
-//  EncoraPrueba
-//
-//  Created by Whiz on 6/02/24.
-//
-
 import UIKit
 
 class DetailViewController: UIViewController {
@@ -26,15 +19,17 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationMultilineTitle()
-        presenter?.getDetail()
+        presenter?.getCountryDetail()
         self.navigationController?.navigationBar.topItem?.title = " "
     }
 }
 extension DetailViewController: DetailViewProtocol{
-    func updateView() {
-        titleLabel.text = presenter?.post?.title
-        bodyLabel.text = presenter?.post?.subtitle
-        IDLabel.text = String(presenter?.post?.id ?? 0)
-    }
     
+    func showCountryDetail() {
+        guard let country = presenter?.country else { return }
+            
+        titleLabel.text = country.name.common
+        bodyLabel.text = country.capital?.first ?? "No Capital"
+        IDLabel.text = country.region
+    }
 }

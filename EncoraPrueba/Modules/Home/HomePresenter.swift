@@ -6,9 +6,8 @@ class HomePresenter {
     var interactor: HomeInteractorInputProtocol?
     private let router: HomeWireframeProtocol
     
-    private var _postToShow = [PostEntity]()
-    var posts = [PostEntity]()
-
+    private var _countriesToShow = [CountryModel]()
+    var countries = [CountryModel]()
     
     init(interface: HomeViewProtocol, interactor: HomeInteractorInputProtocol?, router: HomeWireframeProtocol) {
         self.view = interface
@@ -18,48 +17,48 @@ class HomePresenter {
 }
 
 extension HomePresenter: HomePresenterProtocol {
-    var postsToShow: [PostEntity] {
+    
+    var countriesToShow: [CountryModel] {
         get {
-            return _postToShow
+            return _countriesToShow
         }
         set {
-            _postToShow = newValue
+            _countriesToShow = newValue
         }
     }
-        
-    func getPosts() {
-        interactor?.loadPost()
+    
+    func getCountries() {
+        interactor?.loadCountries()
     }
     
-    func filterByTitle(text: String) {
-        self._postToShow = posts.filter { $0.title.lowercased().contains(text.lowercased()) }
-        view?.showPosts()
+    func filterCountriesByName(text: String) {
+        self._countriesToShow = countries.filter { $0.name.common.lowercased().contains(text.lowercased()) }
+        view?.showCountries()
     }
     
-    func cleanFilter() {
-        _postToShow = posts
-        view?.showPosts()
+    func clearFilter() {
+        _countriesToShow = countries
+        view?.showCountries()
     }
     
-    func postForCellAtIndex(_ index: Int) -> PostEntity {
-        return _postToShow[index]
+    func countryForCellAtIndex(_ index: Int) -> CountryModel {
+        return _countriesToShow[index]
     }
     
     func goToDetailView(withIndex index: Int) {
-        let post = _postToShow[index]
-        router.goToDetailView(post: post)
+        let country = _countriesToShow[index]
+        router.goToDetailView(country: country)
     }
 }
 
 extension HomePresenter: HomeInteractorOutputProtocol {
-    func postListDidFetch(postList: [PostModel]) {
-        posts =  postList.map{$0.postEntity}
-        _postToShow = posts
-        view?.showPosts()
+    func countryListDidFetch(countries: [CountryModel]) {
+        self.countries = countries
+        _countriesToShow = countries
+        view?.showCountries()
     }
     
-    func postListFailed(error: String) {
+    func countryListFailed(error: String) {
         router.showAlertWith(message: error)
     }
 }
-

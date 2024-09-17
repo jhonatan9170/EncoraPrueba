@@ -21,8 +21,6 @@
 		5AC765D12B72DF3E003A869B /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AC765D02B72DF3E003A869B /* HomeView.xib */; };
 		5AC765D42B72DF48003A869B /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AC765D22B72DF48003A869B /* CustomTableViewCell.xib */; };
 		5AC765D52B72DF48003A869B /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC765D32B72DF48003A869B /* CustomTableViewCell.swift */; };
-		5AC765D72B72E15A003A869B /* PostsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC765D62B72E15A003A869B /* PostsModel.swift */; };
-		5AC765D92B72E39B003A869B /* PostsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC765D82B72E39B003A869B /* PostsService.swift */; };
 		5AC765DB2B72FBBE003A869B /* ExtensionUIVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC765DA2B72FBBE003A869B /* ExtensionUIVIewController.swift */; };
 		5AC765E62B7308FE003A869B /* DetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC765E52B7308FE003A869B /* DetailProtocols.swift */; };
 		5AC765E92B730948003A869B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC765E72B730948003A869B /* DetailViewController.swift */; };
@@ -34,6 +32,10 @@
 		5AC765F42B73480D003A869B /* MockHomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC765F32B73480D003A869B /* MockHomeRouter.swift */; };
 		5AC765F62B73483D003A869B /* MockHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC765F52B73483D003A869B /* MockHomeView.swift */; };
 		5AC765F82B734876003A869B /* MockHomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC765F72B734876003A869B /* MockHomeInteractor.swift */; };
+		94F0BF1C2C99E049004A9EFF /* CountriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F0BF1B2C99E049004A9EFF /* CountriesService.swift */; };
+		94F0BF1E2C99E2F3004A9EFF /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F0BF1D2C99E2F3004A9EFF /* CountryModel.swift */; };
+		94F0BF202C9A0DBB004A9EFF /* HomeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F0BF1F2C9A0DBB004A9EFF /* HomeAssembly.swift */; };
+		94F0BF222C9A0F0B004A9EFF /* DetailAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F0BF212C9A0F0B004A9EFF /* DetailAssembly.swift */; };
 		DB46169C71D52B8EC806DE52 /* Pods_EncoraPrueba.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD0821F866D0B264C053CDB /* Pods_EncoraPrueba.framework */; };
 		F4A046CF9D42D578BF28DB04 /* Pods_EncoraPruebaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCACCC2E2B0CD127AAC06354 /* Pods_EncoraPruebaTests.framework */; };
 /* End PBXBuildFile section */
@@ -69,8 +71,6 @@
 		5AC765D02B72DF3E003A869B /* HomeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
 		5AC765D22B72DF48003A869B /* CustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		5AC765D32B72DF48003A869B /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
-		5AC765D62B72E15A003A869B /* PostsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsModel.swift; sourceTree = "<group>"; };
-		5AC765D82B72E39B003A869B /* PostsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsService.swift; sourceTree = "<group>"; };
 		5AC765DA2B72FBBE003A869B /* ExtensionUIVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIVIewController.swift; sourceTree = "<group>"; };
 		5AC765E52B7308FE003A869B /* DetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProtocols.swift; sourceTree = "<group>"; };
 		5AC765E72B730948003A869B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +83,10 @@
 		5AC765F52B73483D003A869B /* MockHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHomeView.swift; sourceTree = "<group>"; };
 		5AC765F72B734876003A869B /* MockHomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHomeInteractor.swift; sourceTree = "<group>"; };
 		8C65C053B90C983EFEFE6AF3 /* Pods-EncoraPruebaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EncoraPruebaTests.debug.xcconfig"; path = "Target Support Files/Pods-EncoraPruebaTests/Pods-EncoraPruebaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		94F0BF1B2C99E049004A9EFF /* CountriesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesService.swift; sourceTree = "<group>"; };
+		94F0BF1D2C99E2F3004A9EFF /* CountryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryModel.swift; sourceTree = "<group>"; };
+		94F0BF1F2C9A0DBB004A9EFF /* HomeAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAssembly.swift; sourceTree = "<group>"; };
+		94F0BF212C9A0F0B004A9EFF /* DetailAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAssembly.swift; sourceTree = "<group>"; };
 		CFD0821F866D0B264C053CDB /* Pods_EncoraPrueba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EncoraPrueba.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCACCC2E2B0CD127AAC06354 /* Pods_EncoraPruebaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EncoraPruebaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -205,7 +209,8 @@
 				5AC765C62B72D84E003A869B /* HomePresenter.swift */,
 				5AC765C82B72D85E003A869B /* HomeInteractor.swift */,
 				5AC765C42B72D840003A869B /* HomeRouter.swift */,
-				5AC765D62B72E15A003A869B /* PostsModel.swift */,
+				94F0BF1F2C9A0DBB004A9EFF /* HomeAssembly.swift */,
+				94F0BF1D2C99E2F3004A9EFF /* CountryModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -214,7 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				5AC765CD2B72DB65003A869B /* RequestMananger.swift */,
-				5AC765D82B72E39B003A869B /* PostsService.swift */,
+				94F0BF1B2C99E049004A9EFF /* CountriesService.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -237,6 +242,7 @@
 				5AC765EB2B730C5D003A869B /* DetailRouter.swift */,
 				5AC765ED2B730CB1003A869B /* DetailPresenter.swift */,
 				5AC765EF2B730D22003A869B /* DetailInteractor.swift */,
+				94F0BF212C9A0F0B004A9EFF /* DetailAssembly.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -432,12 +438,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94F0BF222C9A0F0B004A9EFF /* DetailAssembly.swift in Sources */,
 				5AC7658B2B72D148003A869B /* AppDelegate.swift in Sources */,
 				5AC765EC2B730C5D003A869B /* DetailRouter.swift in Sources */,
 				5AC765C12B72D7B2003A869B /* HomeProtocols.swift in Sources */,
 				5AC765F02B730D22003A869B /* DetailInteractor.swift in Sources */,
 				5AC7658D2B72D148003A869B /* SceneDelegate.swift in Sources */,
 				5AC765C72B72D84E003A869B /* HomePresenter.swift in Sources */,
+				94F0BF202C9A0DBB004A9EFF /* HomeAssembly.swift in Sources */,
 				5AC765C32B72D824003A869B /* HomeViewController.swift in Sources */,
 				5AC765DB2B72FBBE003A869B /* ExtensionUIVIewController.swift in Sources */,
 				5AC765CE2B72DB65003A869B /* RequestMananger.swift in Sources */,
@@ -445,10 +453,10 @@
 				5AC765C52B72D840003A869B /* HomeRouter.swift in Sources */,
 				5AC765C92B72D85E003A869B /* HomeInteractor.swift in Sources */,
 				5AC765E62B7308FE003A869B /* DetailProtocols.swift in Sources */,
+				94F0BF1C2C99E049004A9EFF /* CountriesService.swift in Sources */,
+				94F0BF1E2C99E2F3004A9EFF /* CountryModel.swift in Sources */,
 				5AC765CB2B72D8A0003A869B /* Constants.swift in Sources */,
 				5AC765E92B730948003A869B /* DetailViewController.swift in Sources */,
-				5AC765D72B72E15A003A869B /* PostsModel.swift in Sources */,
-				5AC765D92B72E39B003A869B /* PostsService.swift in Sources */,
 				5AC765EE2B730CB1003A869B /* DetailPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
