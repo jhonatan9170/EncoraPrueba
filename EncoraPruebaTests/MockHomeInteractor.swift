@@ -3,11 +3,12 @@ import Foundation
 @testable import EncoraPrueba
 
 class MockHomeInteractor: HomeInteractorInputProtocol {
+    
     var presenter: HomeInteractorOutputProtocol?
     
-    var loadPostCalled = false
+    var loadCountriesCalled = false
 
-    func loadPost() {
-        loadPostCalled = true
+    func loadCountries() {
+        loadCountriesCalled = true
     }
 }

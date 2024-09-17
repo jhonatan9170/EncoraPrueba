@@ -33,3 +33,8 @@ struct CountryModel: Codable {
         let symbol: String?
     }
 }
+extension CountryModel: Equatable {
+    static func == (lhs: CountryModel, rhs: CountryModel) -> Bool {
+        return lhs.name.common == rhs.name.common
+    }
+}

@@ -6,10 +6,10 @@ class MockHomeRouter: HomeWireframeProtocol {
     var goToDetailViewCalled = false
     var shoeAlert = false
     var messageAlert = ""
-    var post:PostEntity?
-    func goToDetailView(post: PostEntity) {
+    var country: CountryModel?
+    func goToDetailView(country: CountryModel) {
         goToDetailViewCalled = true
-        self.post = post
+        self.country = country
     }
 
     func showAlertWith(message: String) {

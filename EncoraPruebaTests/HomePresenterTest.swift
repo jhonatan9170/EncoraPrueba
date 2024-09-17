@@ -26,85 +26,85 @@ class HomePresenterTests: XCTestCase {
 
     func testGetPosts() {
         // When
-        sut.getPosts()
+        sut.getCountries()
 
         // Then
-        XCTAssertTrue(mockInteractor.loadPostCalled)
+        XCTAssertTrue(mockInteractor.loadCountriesCalled)
     }
 
     func testFilterByTitle() {
         // Given
         let searchText = "Test1"
-        let post1 = PostEntity(id: 1, title: "Test1 Title", subtitle: "Test1 Subtitle")
-        let post2 = PostEntity(id: 2, title: "Test2 Title", subtitle: "Test2 Subtitle")
-        sut.posts = [post1,post2]
+        let country1 = CountryModel(name: .init(common: "Test1", official: "", nativeName: [:]), capital: nil, region: "", subregion: "", population: 0, area: 0, flag: "", flags: .init(png: "", svg: ""), currencies: nil, languages: nil)
+        let country2 = CountryModel(name: .init(common: "Test2", official: "", nativeName: [:]), capital: nil, region: "", subregion: "", population: 0, area: 0, flag: "", flags: .init(png: "", svg: ""), currencies: nil, languages: nil)
+        sut.countries = [country1,country2]
 
         // When
-        sut.filterByTitle(text: searchText)
+        sut.filterCountriesByName(text: searchText)
 
         // Then
-        XCTAssertTrue(mockView.showPostsCalled)
-        XCTAssertEqual(sut.postsToShow.count, 1)
+        XCTAssertTrue(mockView.showCountriesCalled)
+        XCTAssertEqual(sut.countriesToShow.count, 1)
     }
 
     func testCleanFilter() {
         // Given
-        let post1 = PostEntity(id: 1, title: "Test1 Title", subtitle: "Test1 Subtitle")
-        let post2 = PostEntity(id: 2, title: "Test2 Title", subtitle: "Test2 Subtitle")
-        sut.posts = [post1,post2]
-        sut.postsToShow = []
+        let country1 = CountryModel(name: .init(common: "Test1", official: "", nativeName: [:]), capital: nil, region: "", subregion: "", population: 0, area: 0, flag: "", flags: .init(png: "", svg: ""), currencies: nil, languages: nil)
+        let country2 = CountryModel(name: .init(common: "Test2", official: "", nativeName: [:]), capital: nil, region: "", subregion: "", population: 0, area: 0, flag: "", flags: .init(png: "", svg: ""), currencies: nil, languages: nil)
+        sut.countries = [country1,country2]
+        sut.countriesToShow = []
         // When
-        sut.cleanFilter()
+        sut.clearFilter()
 
         // Then
-        XCTAssertTrue(mockView.showPostsCalled)
-        XCTAssertEqual(sut.postsToShow.count, 2) // Assuming postsToShow is cleared in this test
+        XCTAssertTrue(mockView.showCountriesCalled)
+        XCTAssertEqual(sut.countriesToShow.count, 2) // Assuming postsToShow is cleared in this test
     }
 
     func testPostForCellAtIndex() {
         // Given
-        let post = PostEntity(id: 1, title: "Test Title", subtitle: "Test Subtitle")
-        sut.postsToShow = [post]
+        let country = CountryModel(name: .init(common: "Test", official: "", nativeName: [:]), capital: nil, region: "", subregion: "", population: 0, area: 0, flag: "", flags: .init(png: "", svg: ""), currencies: nil, languages: nil)
+        sut.countriesToShow = [country]
 
         // When
-        let retrievedPost = sut.postForCellAtIndex(0)
+        let retrievedCountry = sut.countryForCellAtIndex(0)
 
         // Then
-        XCTAssertEqual(retrievedPost, post)
+        XCTAssertEqual(retrievedCountry, country)
     }
     
     func postListDidFetchTest(){
         // Given
-        let postModel1 = PostModel(id: 1, userID: 1, title: "Test1 Title", body: "Test1 Subtitle")
-        let post1 = PostEntity(id: 1, title: "Test1 Title", subtitle: "Test1 Subtitle")
+        let country = CountryModel(name: .init(common: "Test", official: "", nativeName: [:]), capital: nil, region: "", subregion: "", population: 0, area: 0, flag: "", flags: .init(png: "", svg: ""), currencies: nil, languages: nil)
+        sut.countriesToShow = [country]
 
         // When
-        sut.postListDidFetch(postList: [postModel1])
+        sut.countryListDidFetch(countries: [country])
 
         // Then
-        XCTAssertTrue(mockView.showPostsCalled)
-        XCTAssertEqual(sut.postsToShow, [post1])
-        XCTAssertEqual(sut.posts, [post1])
+        XCTAssertTrue(mockView.showCountriesCalled)
+        XCTAssertEqual(sut.countriesToShow, [country])
+        XCTAssertEqual(sut.countries, [country])
     }
 
     func testGoToDetailView() throws {
         // Given
-        let post = PostEntity(id: 1, title: "Test Title", subtitle: "Test Subtitle")
-        sut.postsToShow = [post]
+        let country = CountryModel(name: .init(common: "Test", official: "", nativeName: [:]), capital: nil, region: "", subregion: "", population: 0, area: 0, flag: "", flags: .init(png: "", svg: ""), currencies: nil, languages: nil)
+        sut.countriesToShow = [country]
         // When
         sut.goToDetailView(withIndex: 0)
 
         // Then
-        let resultPost = try XCTUnwrap(mockRouter.post)
+        let resultCountry = try XCTUnwrap(mockRouter.country)
         XCTAssertTrue(mockRouter.goToDetailViewCalled)
-        XCTAssertEqual(post,resultPost)
+        XCTAssertEqual(country,resultCountry)
     }
     
     func testGoToError(){
         // Given
         let message = "Error Carga"
         // When
-        sut.postListFailed(error: message)
+        sut.countryListFailed(error: message)
 
         // Then
         XCTAssertTrue(mockRouter.shoeAlert)
